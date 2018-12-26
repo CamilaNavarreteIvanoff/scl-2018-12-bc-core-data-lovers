@@ -1,5 +1,5 @@
-const POKEMON = {
-  "pokemon": [{
+const POKEMON = {    //es un objeto
+  "pokemon": [{  //propiedad que tiene 151 objeticos con propiedad que tiene elementos o arreglo
     "id": 1,
     "num": "001",
     "name": "Bulbasaur",
@@ -4085,3 +4085,8 @@ const POKEMON = {
   }]
 }
 ;;
+
+
+
+
+ 
