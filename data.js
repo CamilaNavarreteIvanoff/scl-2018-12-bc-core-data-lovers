@@ -34,14 +34,15 @@ window.example = example;
   })
   
   
-    console.log(tiposDePokemon);
+    // console.log(tiposDePokemon);
     return tiposDePokemon
   };
 
-const imagen =[]  
-for (let i=0; i< data.lenght, i++){
-  imagen.push(data[i]["img"]);
-};
+// const imagenes =[]  
+//  for (let i=0; i< data.lenght, i++){
+//    imagen.push(data[i]["img"]);
+
+//  };
 
 
 
