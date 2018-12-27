@@ -3,17 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-      <select id="select2">
-          <option></option>
-          <option value="Grass">Pasto </option>
-          <option value= "Poison">Veneno</option>
-        </select>
+  <body class="body">
     
-        <div id= "contenedor"></div>
 
+      <div class="row">
+          <div class="input-field col s2">
+             <select id="select2">
+                 <option value="" disabled selected>Categorias</option>
+                 <option></option>
+                 <option value="Grass">Planta </option>
+                 <option value= "Poison">Veneno</option>
+                 <option value="Fire">Fuego </option>
+                 <option value= "Water">Agua</option>
+                 <option value= "Normal">Normal</option>
+                 <option value="Ground">Tierra </option>
+                 <option value= "Fighting">Lucha</option>
+                 <option value= "Rock">Roca</option>
+                 <option value="Ice">Hielo </option>
+                 <option value= "Flying">Volador</option>
+                 <option value= "Bug">Bicho</option>
+                 <option value="Electric">Eléctrico </option>
+                 <option value= "Fairy">Hada</option>
+                 <option value= "Psychic">Psíquico</option>
+                 <option value="Ghost">Fantasma </option>
+                 <option value= "Dragon">Dragón</option>
+             </select>
+              <label></label>
+          </div>
+         </div>
+      
+        
+    
+      <div id= "contenedor" class="contenedor">
+
+      
+
+      </div>
+
+      
         
 
 
@@ -24,6 +57,8 @@
     <!-- <script src="./data/steam/steam.js"></script> -->
     <!-- <script src="./data/worldbank/worldbank.js"></script> -->
     <!-- <script src="./data/lol/lol.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
