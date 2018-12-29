@@ -3,9 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+
+  <body class="body">
+    
+      <div class="row">
+          <div class="input-field col s2">
+             <select id="select2">
+                 <option value="" disabled selected>Tipos</option>
+                 <option></option>
+                 <option value="Grass">Planta </option>
+                 <option value= "Poison">Veneno</option>
+                 <option value="Fire">Fuego </option>
+                 <option value= "Water">Agua</option>
+                 <option value= "Normal">Normal</option>
+                 <option value="Ground">Tierra </option>
+                 <option value= "Fighting">Lucha</option>
+                 <option value= "Rock">Roca</option>
+                 <option value="Ice">Hielo </option>
+                 <option value= "Flying">Volador</option>
+                 <option value= "Bug">Bicho</option>
+                 <option value="Electric">Eléctrico </option>
+                 <option value= "Fairy">Hada</option>
+                 <option value= "Psychic">Psíquico</option>
+                 <option value="Ghost">Fantasma </option>
+                 <option value= "Dragon">Dragón</option>
+             </select>
+          </div>
+         </div>
+      
+        
+      <div id= "contenedor" class="contenedor"></div>
+
+      
+    
 
     <select id="select1">
       <option value="seleccione_opcion">Selecciona tu opción</option>
@@ -14,10 +50,9 @@
       <option value="1-151">Ordenar por número</option>
     </select>
 
-
     <div id="ordenado"></div>
 
-    <div id="root"></div>
+   
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <script src="./data/pokemon/pokemon.js"></script>
     <!-- <script src="./data/steam/steam.js"></script> -->
@@ -25,5 +60,8 @@
     <!-- <script src="./data/lol/lol.js"></script> -->
     <script src="data.js"></script>
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  
   </body>
 </html>

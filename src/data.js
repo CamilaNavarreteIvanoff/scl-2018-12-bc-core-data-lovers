@@ -1,7 +1,6 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
-
 window.pokego = {
 
   sortData: (data, sortBy, sortOrder) => {
@@ -56,34 +55,11 @@ window.pokego = {
 }
 }
 
+    function filterData(data, condition)  {
+
+      const tiposDePokemon = data.filter(tipos =>{
+      return tipos.type.indexOf(condition) !== -1;
+       })
+  
 
 
-
-//const data = POKEMON.pokemon;
-
-//let typePokeGo = []
-//for (let i = 0; i < data.length;i++) {
-  //typePokeGo.push(data[i].type);
-//}
-
-//console.log(typePokeGo)
-
-//let nombrePokemon = []
-  //for (let i = 0; i < data.length;i++) {
-  //nombrePokemon.push(data[i]["name"]);
-
-//}
-
-//let ordenadoaz = (nombrePokemon.sort());
-//ordenadoaz.forEach (pokemonaz =>{
-//console.log(pokemonaz + "<br>");
-//})
-
-
-
-//let ordenadosza = (nombrePokemon.reverse());
-//ordenadoaz.forEach(pokemon => {
-//console.log(pokemon + "<br>")
-//}) 
-
-//};
