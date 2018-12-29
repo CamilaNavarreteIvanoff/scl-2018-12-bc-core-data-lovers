@@ -1,7 +1,7 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     M.AutoInit();
   });
-
 
 
 document.getElementById("select2").addEventListener("change",() =>{
@@ -55,9 +55,34 @@ document.getElementById("select2").addEventListener("change",() =>{
 //  </div>
 
 
-   
+  
 
-//    document.getElementById("contenedor").innerHTML +=
-//     ` <img src="${filterData(POKEMON.pokemon, "name", document.getElementById("select2").value)[i].img}"   <br>`;
 
+  const div_contenedor = document.getElementById("ordenado"); //imprime el listado ordenado
+  
+  
+  document.getElementById("select1").addEventListener("change", () => {
+    div_contenedor.innerHTML=""
+  
+   if (document.getElementById("select1").value === "a-z" || document.getElementById("select1").value === "z-a") {
+    for (let i = 0; i < POKEMON.pokemon.length ;i++) {
+   document.getElementById("ordenado").innerHTML += ` <img src="${pokego.sortData(POKEMON.pokemon, "name", document.getElementById("select1").value)[i].img}" alt="${pokego.sortData(POKEMON.pokemon, "name", document.getElementById("select1").value)[i].name}"> <br> ${pokego.sortData(POKEMON.pokemon, "name", document.getElementById("select1").value)[i].name} <br>`;
+   } 
+
+  }
+  
+  if (document.getElementById("select1").value === "1-151"){
+    for (let i = 0; i < POKEMON.pokemon.length ;i++) {
+   document.getElementById("ordenado").innerHTML += `${pokego.sortData(POKEMON.pokemon, "number", document.getElementById("select1").value)[i].id} <br>`;
+
+        
+}
+  }});
+
+
+
+  
+
+
+ 
 
