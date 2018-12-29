@@ -1,52 +1,65 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
-const example = () => {
-  return 'example';
-};
+window.pokego = {
 
-window.example = example;
+  sortData: (data, sortBy, sortOrder) => {
+    if (sortBy === "name" && sortOrder === "a-z"){
+      data.sort((a,b) =>{
+        if (a.name < b.name) {
+          return -1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        }
+        //a debe ser igual b
+        return 0;
+        
+      } )
+     return data;
 
-// const TiposDePokemon = pokemon.map(function(tipo){
-//   return pokemon.tipo
-// });
-// window.pokemon.tipo ;
+    } 
 
-// console.log(TiposDePokemon);
+    if (sortBy === "name" && sortOrder === "z-a"){
+      data.sort((a,b) =>{
+        if (a.name > b.name) {
+          return -1;
+        }
+        if (a.name < b.name) {
+          return 1;
+        }
+        //a debe ser igual b
+        return 0;
+        
+      } )
+     return data;
 
+    } 
 
-//  const datos = POKEMON.pokemon;
+    if (sortBy === "number" && sortOrder === "1-151"){
+      data.sort((a,b) =>{
+        if (a.id < b.id) {
+          return -1;
+        }
+        if (a.id > b.id) {
+          return 1;
+        }
+        //a debe ser igual b
+        return 0;
+        
+      } )
+     return data;
 
-//   let tiposDePokemon = POKEMON.pokemon.filter(function(tipos){
-//           return tipos.type.indexOf("Grass", ) !== -1;});
-
-//           console.log(tiposDePokemon)
-          
- //return tiposDePokemon
- 
-
- 
- function filterData(data, condition)  {
-
-  const tiposDePokemon = data.filter(tipos =>{
-    return tipos.type.indexOf(condition) !== -1;
-
-  })
+  }
   
+}
+}
+
+    function filterData(data, condition)  {
+
+      const tiposDePokemon = data.filter(tipos =>{
+      return tipos.type.indexOf(condition) !== -1;
+       })
   
-    // console.log(tiposDePokemon);
-    return tiposDePokemon
-  };
-
-// const imagenes =[]  
-//  for (let i=0; i< data.lenght, i++){
-//    imagen.push(data[i]["img"]);
-
-//  };
 
 
-
-//     let tiposDePokemon = POKEMON.pokemon.filter(function(tipos){
-//        return tipos.type.indexOf.value !== -1;
-    
-// });
