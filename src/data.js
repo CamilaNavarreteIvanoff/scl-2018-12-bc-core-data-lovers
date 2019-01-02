@@ -62,4 +62,6 @@ window.pokego = {
        })
   
 
+      return tiposDePokemon};
 
+   
