@@ -13,9 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
 //      })
 //      return start
 
-
-     
-
      
 document.getElementById("select2").addEventListener("change",() =>{
     document.getElementById("resultado").innerHTML = " " 
@@ -25,8 +22,7 @@ document.getElementById("select2").addEventListener("change",() =>{
    
 
        document.getElementById("resultado").innerHTML += 
-      `<div class="row">
-         <div class="col s12 m5" style=" width: 298px;    height: 348px;">
+      `<div class="col s12 m5" style=" width: 298px;    height: 348px;">
           <div class="card">
               <div class="card-image blue accent-1">
               <div class="num" > ${filterData(POKEMON.pokemon, tipo)[i].num}</div>
@@ -39,30 +35,9 @@ document.getElementById("select2").addEventListener("change",() =>{
           </div>
         </div>
       </div>
-      </span></div>
+      </span>
     </div>`;
 
-
-
-       document.getElementById("contenedor").innerHTML += 
-       `<div class="row">
-         <div class= "col s12 m6" style=" width: 298px; height: 348px;">
-           <div class="card">
-             <div class="card small" style=" width: 298px;    height: 348px;">
-            <div class="card-panel  blue lighten-3" style="width: 298px;
-            height: 348px;">
-            <div class="num"> ${filterData(POKEMON.pokemon, tipo)[i].num}</div>
-              <span class="card-title"> ${filterData(POKEMON.pokemon, tipo)[i].name} </span> 
-              <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add</i></a> 
-            <div class="card-image">
-              <img src="${filterData(POKEMON.pokemon, tipo)[i].img}" alt="${filterData(POKEMON.pokemon, tipo)[i].img}" style= "width: 210px;">
-            </div>
-            </div>
-           </div>
-           </div>
-         </div>
-       </div>
-     </div>`;
       
    }
    });
@@ -89,14 +64,14 @@ document.getElementById("select2").addEventListener("change",() =>{
       }});
 
       
-        document.getElementById("ordenado").innerHTML="";
+        //document.getElementById("ordenado").innerHTML="";
        
        
 
 
-      document.getElementById("go").addEventListener("click", () =>{
-        console.log("select1", "select2");
-        });
+      // document.getElementById("go").addEventListener("click", () =>{
+      //   console.log("select1", "select2");
+      //   });
 
 // document.getElementById("myBtn").addEventListener("click", function(){
 //   document.getElementById("demo").innerHTML = "Hello World";
