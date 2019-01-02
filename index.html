@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+
   </head>
+
 
   <body class="body">
          
+    <div id= "portada">
+    <button id= "go"> <a href="portada.html">GO!</a></button>
+  </div>  
+
     <div class="container" >
-    
+
       <div class="row">
           <div class="input-field col s2">
              <select id="select2">
-                 <option value="" disabled selected>Tipos</option>
-                 <option></option>
+                 <option value="">Tipos</option>
                  <option value="Grass">Planta </option>
                  <option value= "Poison">Veneno</option>
                  <option value="Fire">Fuego </option>
@@ -44,6 +49,7 @@
       <div id= "resultado" class="row" ></div>
 
            
+
 
 <!-- Modal Structure -->
       <div id="modal1" class="modal">
@@ -89,7 +95,8 @@
     
   <div class="row">
     <div class="input-field col s5">
-    <select id="select1">
+
+    <select id="select1" class="select1">
       <option value="seleccione_opcion">Selecciona tu opción</option>
       <option value="a-z">Ordenar A-Z</option>  
       <option value="z-a">Ordenar Z-A</option>
@@ -98,7 +105,10 @@
   </div>
 </div>
 
-  <div id="ordenado"></div>
+
+    <div id="ordenado" class="ordenado"></div>
+    
+    
 
    
     <!-- <script src="./data/injuries/injuries.js"></script> -->
@@ -108,8 +118,8 @@
     <!-- <script src="./data/lol/lol.js"></script> -->
     <script src="data.js"></script>
     <script src="main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> <!--listo-->
   </body>
 </html>
+
