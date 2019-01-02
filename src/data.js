@@ -60,8 +60,10 @@ window.pokego = {
       const tiposDePokemon = data.filter(tipos =>{
       return tipos.type.indexOf(condition) !== -1;
        })
-  
+       return tiposDePokemon;
+      }
+      
 
-      return tiposDePokemon};
 
    
+
