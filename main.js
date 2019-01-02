@@ -4,14 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     M.AutoInit();
   });
   
-  
-
-//  const start = document.getElementById("portada");
-//      start.addEventListener("click"() => {
-//       target.removeEventListener(tipo, listener[start])
-
-//      })
-//      return start
 
      
 document.getElementById("select2").addEventListener("change",() =>{
@@ -63,15 +55,21 @@ document.getElementById("select2").addEventListener("change",() =>{
 
       }});
 
-      
-        //document.getElementById("ordenado").innerHTML="";
-       
-       
+      //document.getElementById("IngresaTexto").value = ""
 
+       document.getElementById("go").addEventListener("click", () =>{
+         document.getElementById("portada").style.display="none";
+         document.getElementById("resultado").style.display="block"
+         document.getElementById("container").style.display="block";
+       } 
+       )
+
+       
+        
 
       // document.getElementById("go").addEventListener("click", () =>{
-      //   console.log("select1", "select2");
-      //   });
+      // console.log("select1", "select2");
+      //    });
 
 // document.getElementById("myBtn").addEventListener("click", function(){
 //   document.getElementById("demo").innerHTML = "Hello World";

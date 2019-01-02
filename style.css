@@ -14,3 +14,10 @@
     clear: both;
 }
 
+#container{
+    display: none;
+}
+
+#select1{
+    display: none;
+}
