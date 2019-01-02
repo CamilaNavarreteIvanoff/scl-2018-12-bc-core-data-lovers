@@ -1,5 +1,14 @@
-.body { background-color:yellow };
+.img { background-image: url("scl-2018-12-bc-core-data-lovers/fondofinalsolo.png");
+};
+
+
 .contenedor style {
     width: 298px;
     height: 348px;
 };
+
+.row:after {
+    content: "";
+    /* display: table; */
+    clear: both;
+}
