@@ -11,27 +11,10 @@ document.getElementById("select2").addEventListener("change",() =>{
    for (let i = 0; i < filterData(POKEMON.pokemon, tipo).length ; i++){
    
        document.getElementById("resultado").innerHTML += 
-      //  `<div class="row">
-      //    <div class="col s12 m5" style=" width: 298px;    height: 348px;">
-      //       <div class="card ">
-      //        <div class="card small" style=" width: 298px;    height: 348px;">
-      //          <div class="card-panel  blue lighten-3" style="width: 298px; height: 348px;">
-      //           <div class="num" > ${filterData(POKEMON.pokemon, tipo)[i].num}</div>
-      //           <span class="card-title"> ${filterData(POKEMON.pokemon, tipo)[i].name} </span> 
-      //           <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add</i></a> 
-      //          <div class="card-image">
-      //         <img src="${filterData(POKEMON.pokemon, tipo)[i].img}" alt="${filterData(POKEMON.pokemon, tipo)[i].img}" style= "width: 210px;">
-      //         <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Ficha pokemon</a>
-      //        </div>
-      //        </div>
-      //      </div>
-      //      </div>
-      //    </div>
-      //  </div>
-      //       </div>  `;
+     
 
       
-      `<div class="row">
+      `
          <div class="col s12 m5" style=" width: 298px;    height: 348px;">
           <div class="card">
               <div class="card-image blue accent-1">
@@ -41,12 +24,12 @@ document.getElementById("select2").addEventListener("change",() =>{
             
           </div>
           <div class="card-action">
-              <a class="waves-effect waves-light btn modal-trigger blue accent-1 " href="#modal1">Ficha pokemon</a>
+              <a class="waves-effect waves-light btn modal-trigger blue accent-1 " href="#modal1">Ficha pokemon</a> <!-- Modal Trigger -->
           </div>
         </div>
       </div>
       </span></div>
-    </div>`;
+    `;
 
 
 
