@@ -1,15 +1,27 @@
 
+
 document.addEventListener('DOMContentLoaded', function() {
     M.AutoInit();
   });
   
+  
+
+//  const start = document.getElementById("portada");
+//      start.addEventListener("click"() => {
+//       target.removeEventListener(tipo, listener[start])
+
+//      })
+//      return start
 
 
+     
+
+     
 document.getElementById("select2").addEventListener("change",() =>{
     document.getElementById("contenedor").innerHTML = " " 
    
      let tipo =document.getElementById("select2").value
-   for (let i = 0; i < filterData(POKEMON.pokemon, tipo).length ; i++){
+      for (let i = 0; i < filterData(POKEMON.pokemon, tipo).length ; i++){
    
        document.getElementById("contenedor").innerHTML += 
        `<div class="row">
@@ -38,27 +50,38 @@ document.getElementById("select2").addEventListener("change",() =>{
 
   const div_contenedor = document.getElementById("ordenado"); //imprime el listado ordenado
   
+        document.getElementById("select1").addEventListener("change", () => {
+        div_contenedor.innerHTML=""
   
-  document.getElementById("select1").addEventListener("change", () => {
-    div_contenedor.innerHTML=""
-  
-   if (document.getElementById("select1").value === "a-z" || document.getElementById("select1").value === "z-a") {
-    for (let i = 0; i < POKEMON.pokemon.length ;i++) {
-   document.getElementById("ordenado").innerHTML += `<img src="${pokego.sortData(POKEMON.pokemon, "name", document.getElementById("select1").value)[i].img}" alt="${pokego.sortData(POKEMON.pokemon, "name", document.getElementById("select1").value)[i].name}"> ${pokego.sortData(POKEMON.pokemon, "name", document.getElementById("select1").value)[i].name}`;
-  } 
+        if (document.getElementById("select1").value === "a-z" || document.getElementById("select1").value === "z-a") {
+        for (let i = 0; i < POKEMON.pokemon.length ;i++) {
+        document.getElementById("ordenado").innerHTML += `<img src="${pokego.sortData(POKEMON.pokemon, "name", document.getElementById("select1").value)[i].img}" alt="${pokego.sortData(POKEMON.pokemon, "name", document.getElementById("select1").value)[i].name}"> ${pokego.sortData(POKEMON.pokemon, "name", document.getElementById("select1").value)[i].name}`;
+        } 
 
-  }
+      }
   
-  if (document.getElementById("select1").value === "1-151"){
-    for (let i = 0; i < POKEMON.pokemon.length ;i++) {
-   document.getElementById("ordenado").innerHTML += `<img src="${pokego.sortData(POKEMON.pokemon, "number", document.getElementById("select1").value)[i].img}" alt="${pokego.sortData(POKEMON.pokemon, "number", document.getElementById("select1").value)[i].img}"> ${pokego.sortData(POKEMON.pokemon, "number", document.getElementById("select1").value)[i].id}`;
+      if (document.getElementById("select1").value === "1-151"){
+      for (let i = 0; i < POKEMON.pokemon.length ;i++) {
+      document.getElementById("ordenado").innerHTML += `<img src="${pokego.sortData(POKEMON.pokemon, "number", document.getElementById("select1").value)[i].img}" alt="${pokego.sortData(POKEMON.pokemon, "number", document.getElementById("select1").value)[i].img}"> ${pokego.sortData(POKEMON.pokemon, "number", document.getElementById("select1").value)[i].id}`;
 
         
-}
-  }});
+      }
+
+      }});
+
+      
+        document.getElementById("ordenado").innerHTML="";
+       
+       
 
 
+      document.getElementById("go").addEventListener("click", () =>{
+        console.log("select1", "select2");
+        });
 
+// document.getElementById("myBtn").addEventListener("click", function(){
+//   document.getElementById("demo").innerHTML = "Hello World";
+// });
 
 
 
