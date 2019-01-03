@@ -1,16 +1,34 @@
 
-.img { background-image: url("scl-2018-12-bc-core-data-lovers/fondofinalsolo.png");
-};
+.nav-wrapper {
+    background-color: #ffea00 !important;
 
+  }
 
-.contenedor style {
-    width: 298px;
-    height: 348px;
-};
-
-.row:after {
-    content: "";
-    /* display: table; */
-    clear: both;
+  @media (min-width: 500px) { /* si desea, cambiar tamaño de la pantalla en esta línea */
+    nav {
+        height: 120px !important;            /* Cambia el valor de lo que quieres */
+        line-height: 45px !important;       /* Cambia el valor de lo que quieres */
+    }
 }
 
+.brand-logo{
+    height: 169px;
+    width:225px ;   
+    margin-top: -1%;
+}
+
+.waves-effect {
+    color: black;
+}
+
+.num{ color:white;}
+
+.waves-effect{ color:white;}
+
+.name-card-pok{
+    z-index: 100;
+}
+
+#cardgeneral{
+    border-radius:5%;
+}
