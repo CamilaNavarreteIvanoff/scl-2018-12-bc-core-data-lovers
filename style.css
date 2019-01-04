@@ -29,6 +29,18 @@
     z-index: 100;
 }
 
+
 #cardgeneral{
     border-radius:5%;
+
+#container{
+    display: none;
+}
+
+#select1{
+    display: none;
+}
+
+#select-ordenar{
+    display: none;
 }
