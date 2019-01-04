@@ -12,7 +12,6 @@
 
 
   <body>
-
   <header>
       <nav>
           <div class="nav-wrapper">
@@ -25,8 +24,17 @@
           </div>
         </nav>
   </header>
- 
-<div class="container" >
+
+
+  <!-- Aqui va la portada -->
+  <!--<div id= "portada">
+      <button id= "go"> GO!</button>
+    </div>  -->
+
+<!-- <div id= "information" class="information"> -->
+
+<div class="container"> <!--se hace las grillas con este DIV--> 
+
       <div class="row">
           <div class="input-field col s2 m6">
              <select id="select2">
@@ -59,40 +67,18 @@
              </select>
           </div>
       </div>
-      <div class="container_dos">
+      <div class="container_dos">  
           <div class="row">
-            <div id= "resultado" ></div>
-            <div id="ordenado" class="ordenado" ></div>
+            <div id= "resultado" ></div> <!--aqui se imprime los pokemones filtrados-->
+            <div id="ordenado" class="ordenado" ></div> <!--aqui se imprime los pokemones ordenados-->
           </div>
       </div>
 </div>  
 
 <div id="probandomodal" class="row">
-
+  <!-- </div> -->
 </div>
-        
-    
-      <div id= "portada">
-          <button id= "go"> GO!</button>
-        </div>  
-    
-              <div id="select-ordenar">
-            <div class="input-field col s5">
-        
-            <select id="select1" class="select1">
-
-
-              <option value="seleccione_opcion">Ordenar</option>
-              <option value="a-z">Ordenar A-Z</option>  
-              <option value="z-a">Ordenar Z-A</option>
-              <option value="1-151">Ordenar por número</option>
-            </select>
-          </div>
-        </div>
-        </div>
-        
-            <div id="ordenado" class="ordenado"></div> <!--aqui imprime el resultado del orden-->
-            
+                  
            
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <script src="./data/pokemon/pokemon.js"></script>

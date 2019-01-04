@@ -32,15 +32,10 @@
 
 #cardgeneral{
     border-radius:5%;
-
-#container{
-    display: none;
 }
 
-#select1{
+/* aqui se oculta la segunda pagina */
+/* #information{
     display: none;
-}
+} */
 
-#select-ordenar{
-    display: none;
-}
