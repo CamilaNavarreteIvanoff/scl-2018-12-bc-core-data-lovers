@@ -4086,7 +4086,7 @@ const POKEMON = {    //es un objeto
 }
 ;;
 
-
+window.POKEMON = POKEMON 
 
 
  
