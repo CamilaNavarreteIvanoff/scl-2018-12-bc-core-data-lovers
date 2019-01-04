@@ -53,17 +53,15 @@ window.pokego = {
   }
   
 }
-}
 
-    function filterData(data, condition)  {
+}
+window.pokego2 = {
+      filterData(data, condition)  {
 
       const tiposDePokemon = data.filter(tipos =>{
       return tipos.type.indexOf(condition) !== -1;
        })
        return tiposDePokemon;
       }
-      
-
-
-   
-
+    }
+    
