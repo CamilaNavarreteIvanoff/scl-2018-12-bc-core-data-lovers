@@ -33,7 +33,7 @@ document.getElementById("select2").addEventListener("change",() =>{
     `;
    
    }
-   fff(filterData(POKEMON.pokemon, tipo)); 
+   abrirFicha(filterData(POKEMON.pokemon, tipo)); 
    });
 
 
@@ -63,7 +63,7 @@ document.getElementById("select2").addEventListener("change",() =>{
            
        `    
        ;}
-       fff(pokego.sortData(POKEMON.pokemon, "name", document.getElementById("select1").value)); 
+       abrirFicha(pokego.sortData(POKEMON.pokemon, "name", document.getElementById("select1").value)); 
        };
   
       if (document.getElementById("select1").value === "1-151"){
@@ -90,7 +90,7 @@ document.getElementById("select2").addEventListener("change",() =>{
         
                    
            let fichaPokemon =  document.getElementsByClassName("ficha");
-            function fff(data){
+            function abrirFicha(data){
               for (let i=0; i < fichaPokemon.length; i++){
                 fichaPokemon[i].addEventListener("click",()=>{
                   document.getElementById("probandomodal").innerHTML =`
@@ -99,24 +99,23 @@ document.getElementById("select2").addEventListener("change",() =>{
                  <div class="row">
               <div class="col s4"><span class="flow-text">
               <div class="num">
-               <span class="blue-text text-darken-2"><h3>#001</h3></span></div>
+               <span class="blue-text text-darken-2"><h3>#${data[i].num}</h3></span></div>
                <div class="name"><h3><b>${data[i].name}</b></h3></div>
-               <div class="height"><h5><b>Altura:</b>0.71 m</h5></div>
-               <div class="weight"><b>Peso:</b>6.9 kg</div>
-               <div class="candy"><b>Caramelos:</b>Bulbasaur Candy</div>
-               <div class="candy_count"><b>Caramelos contador:</b>25</div>
+               <div class="height"><h5><b>Altura:</b>${data[i].height}</h5></div>
+               <div class="weight"><b>Peso:</b>${data[i].weight}</div>
+               <div class="candy_count"><b>Caramelos contador:</b>${data[i].candy_count}</div>
               </span></div>
           
               <div class="col s4"><span class="flow-text">
                <div> <h5 class="center-align"><b>Tipo</b></h5></div>          
-               <div class="type center-align"> Grass,Poison</div>
+               <div class="type center-align">${data[i].type}</div>
                <div> <h5 class="center-align"><b>Debilidades</b></h5></div> 
                <div> <h6 class="type center-align"> "Fire", "Ice","Flying","Psychic"</h6></div>  
               </span></div>
           
               <div class="col s4 "><span class="flow-text">
                <div class="respondive-image">
-               <img src="http://www.serebii.net/pokemongo/pokemon/001.png ">
+               <img src="${data[i].img}">
                <div> <h5 class="center-align"><b>Evoluciones</b></h5></div> 
               </div>           
               </span></div>      
