@@ -43,15 +43,15 @@ document.getElementById("select2").addEventListener("change",() =>{
         div_contenedor.innerHTML=""
   
         if (document.getElementById("select1").value === "a-z" || document.getElementById("select1").value === "z-a") {
-          for (let i = 0; i < POKEMON.pokemon.length ;i++) {
+          for (let i = 0; i < window.POKEMON.pokemon.length ;i++) {
        
           document.getElementById("ordenado").innerHTML +=` 
           <div class="col s12 m3">
           <div class="card">
               <div class="card-image blue darken-4">
-                  <span class="card-title"> ${pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].name} </span>
-                 <img src="${window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].img}" alt="${pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].img}">
-                 <div class="num">${pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].num}</div>
+                  <span class="card-title"> ${window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].name} </span>
+                 <img src="${window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].img}" alt="${window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].img}">
+                 <div class="num">${window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].num}</div>
           </div>
           <div class="card-action">
           <button class="ficha waves-effect waves-light btn modal-trigger blue darken-4 " href="#modal1">Ficha pokemon</button>
@@ -62,7 +62,7 @@ document.getElementById("select2").addEventListener("change",() =>{
            
        `    
        ;}
-       abrirFicha(pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)); 
+       abrirFicha(window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)); 
        }     
 
       if (document.getElementById("select1").value === "1-151"){
@@ -124,7 +124,7 @@ document.getElementById("select2").addEventListener("change",() =>{
           <a href="#!" class="modal-close waves-effect waves-green btn-flat"> <i class="large material-icons">arrow_back</i></a>
           </div>
           </div>`;
-        M.AutoInit();
+        window.M.AutoInit();
         })
                 }
 

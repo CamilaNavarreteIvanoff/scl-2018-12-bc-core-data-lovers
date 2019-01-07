@@ -50,6 +50,16 @@ window.pokego = {
       } )
      return data;
 
+    //  const numbers = [1, 2, 3, 4, 5];
+    //  const newNumbers = numbers.reduce((elementoAnterior, elementoActual) => {
+    //    console.log('Elemento anterior: ' + elementoAnterior)
+    //    console.log('Elemento actual: ' + elementoActual)
+    //    console.log('Suma de los elementos: ' + (elementoAnterior + elementoActual))
+    //    return elementoAnterior + elementoActual
+    //  })
+
+
+
   }
   
 }
@@ -64,4 +74,6 @@ window.pokego2 = {
        return tiposDePokemon;
       }
     }
+    
+
     
