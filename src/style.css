@@ -27,6 +27,10 @@ body{
     color:#093375; 
 }
 
+
+    
+
+
 .dropdown-content li>span {
     font-size: 16px;
     color:  #326AB1;
@@ -130,4 +134,46 @@ body{
 
 #information{
     display: none;
+    
 }
+.go {
+
+    cursor:pointer;
+    position: absolute;
+    width: 250px;
+    height: 190px;
+    left: 600px;
+    top: 330px;
+
+}
+
+
+
+.textoIntro{
+    position: absolute;
+left: 23%;;
+right: -0.22%;
+top: 50%;
+bottom: 0%;
+
+font-family: Helvetica;
+font-style: bold;
+font-weight: normal;
+line-height: normal;
+font-size:24px;
+
+color: #000000;
+}
+
+.button{
+    
+    width: 100%;
+    left: 23%;;
+right: -0.22%;
+top: 50%;
+bottom: 0%;
+}
+
+.botonOcultar {
+    display: none;
+    }

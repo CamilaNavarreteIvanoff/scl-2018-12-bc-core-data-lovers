@@ -1,17 +1,29 @@
+document.addEventListener('DOMContentLoaded', function() {
+  window.M.AutoInit();
+});
+
 //aqui va la interacción del boton GO
 
 document.getElementById("go").addEventListener("click", (evento) =>{
   evento.preventDefault();
   
   document.getElementById("portada").style.display="none";
-  document.getElementById("information").style.display="block"; })//aqui debe aparecer la pagina de la información de los pokemones
+  document.getElementById("information").style.display="block"; })
+  //aqui debe aparecer la pagina de la información de los pokemones
+
+  const containerRoot = document.getElementById("root");
+  const showData = (POKEMON.pokemon)                      //1. crear una constante para ver la data
+    console.log(showData)
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  window.M.AutoInit();
-});
 
-// interaccion del boton filtrar por tipo
+
+
+  window.onload = showData(window.pokego);
+
+  
+  
+  // interaccion del boton filtrar por tipo
 document.getElementById("select2").addEventListener("change",() =>{
   document.getElementById("resultado").innerHTML = " " 
     
