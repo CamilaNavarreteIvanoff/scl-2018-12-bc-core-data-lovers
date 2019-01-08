@@ -1,4 +1,4 @@
-global.window=global
+global.window=global  
 global.chai=require("chai");
 global.expect=require("chai").expect;
 global.expect=require("chai").assert;
@@ -62,6 +62,16 @@ describe('pokego.sortData', () => {
       assert.deepEqual([orderNumber[0].id, orderNumber[1].id, orderNumber[2].id], [1, 2, 3])
       
     })
-      
+    
   });
 
+  describe('pokego.computeStats', () => {
+    it ('deberia ser una funcion', () => {
+      assert.equal(typeof window.pokego.computeStats, 'function');
+    })
+  
+    it('debe retornar "el porcentaje de pokemones que aparecen a las 01:00 hrs"', () => {
+      assert.deepEqual(window.pokego.computeStats(window.POKEMON.pokemon, "01:"), 13.907284768211921)
+    })
+
+  });

@@ -50,21 +50,31 @@ window.pokego = {
       } )
      return data;
 
-    //  const numbers = [1, 2, 3, 4, 5];
-    //  const newNumbers = numbers.reduce((elementoAnterior, elementoActual) => {
-    //    console.log('Elemento anterior: ' + elementoAnterior)
-    //    console.log('Elemento actual: ' + elementoActual)
-    //    console.log('Suma de los elementos: ' + (elementoAnterior + elementoActual))
-    //    return elementoAnterior + elementoActual
-    //  })
-
-
 
   }
   
-}
+},
+
+computeStats:(data, hours) => {
+  let groupForHour = []
+  let counter = 0
+
+  for (let i = 0; i <data.length; i++){
+    groupForHour.push(data[i].spawn_time)
+
+  }
+    groupForHour.forEach(spawn => {
+      if (spawn.slice(0,3) === hours){
+        counter++
+      }
+
+    })
+    return (100 * counter)/151
+  }
 
 }
+
+
 window.pokego2 = {
       filterData(data, condition)  {
 

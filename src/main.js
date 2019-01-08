@@ -81,9 +81,11 @@ document.getElementById("select2").addEventListener("change",() =>{
     
 //aqui va la interacción del boton GO
 
-      //  document.getElementById("go").addEventListener("click", () =>{
-      //    document.getElementById("portada").style.display="none";
-      //    document.getElementById("information").style.display="block"; //aqui debe aparecer la pagina de la información de los pokemones
+       document.getElementById("go").addEventListener("click", () =>{
+         document.getElementById("portada").style.display="none";
+         document.getElementById("information").style.display="block"; 
+         
+       });//aqui debe aparecer la pagina de la información de los pokemones
 
 
             
