@@ -1,10 +1,16 @@
 
 .nav-wrapper {
-    background-color: #ffea00 !important;
+    background-color:#FECB0A !important;
+        
+}
 
-  }
+body{
+    background-image: url(img/fondo.png); 
+    background-size: cover; 
+    
+}
 
-  @media (min-width: 500px) { /* si desea, cambiar tamaño de la pantalla en esta línea */
+@media (min-width: 500px) { /* si desea, cambiar tamaño de la pantalla en esta línea */
     nav {
         height: 120px !important;            /* Cambia el valor de lo que quieres */
         line-height: 45px !important;       /* Cambia el valor de lo que quieres */
@@ -18,29 +24,110 @@
 }
 
 .waves-effect {
-    color: black;
+    color:#093375; 
 }
 
-.num{ color:white;}
-
-.waves-effect{ color:white;}
-
-.name-card-pok{
-    z-index: 100;
+.dropdown-content li>span {
+    font-size: 16px;
+    color:  #326AB1;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
 }
 
+.btn, .btn-large, .btn-small {
+    text-decoration: none;
+    color: #fff;
+    background-color:#E81E28;
+    text-align: center;
+    letter-spacing: .5px;}
 
-#cardgeneral{
-    border-radius:5%;
+.card {
+    background-color: white;
+    border-radius: 25px;
 
-#container{
-    display: none;
 }
 
-#select1{
-    display: none;
+.header{
+    color: #093375;
 }
 
-#select-ordenar{
+.card .card-content {
+   
+    color:#093375;
+}
+
+.modal{
+    border-radius: 25px;
+}
+
+.type {
+    font-size: 14px;
+    background: #326AB1;
+    color: #fff;
+    display: inline-block;
+    padding: 0.25em 0.6em;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.weaknesses {
+    font-size: 14px;
+    background: #E81E28;
+    color: #fff;
+    display: inline-block;
+    padding: 0.25em 0.6em;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.undefined{
+    display: none !important;
+}
+
+.responsive-image{
+    width: 200px;
+  }
+
+.icon{
+ width: 30px;
+ color:#093375;
+}
+
+.nameType{
+    color:#093375;  
+}
+
+.nameWeaknesses{
+    color:#093375; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+#information{
     display: none;
 }
