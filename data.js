@@ -50,11 +50,31 @@ window.pokego = {
       } )
      return data;
 
+
   }
   
-}
+},
+
+computeStats:(data, hours) => {
+  let groupForHour = []
+  let counter = 0
+
+  for (let i = 0; i <data.length; i++){
+    groupForHour.push(data[i].spawn_time)
+
+  }
+    groupForHour.forEach(spawn => {
+      if (spawn.slice(0,3) === hours){
+        counter++
+      }
+
+    })
+    return (100 * counter)/151
+  }
 
 }
+
+
 window.pokego2 = {
       filterData(data, condition)  {
 
@@ -64,4 +84,6 @@ window.pokego2 = {
        return tiposDePokemon;
       }
     }
+    
+
     
