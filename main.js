@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
   window.M.AutoInit();
 });
 
-//aqui va la interacción del boton GO
-
 
 
 //INTERACCION BOTON GO
@@ -11,12 +9,12 @@ document.getElementById("go").addEventListener("click", (evento) =>{
   evento.preventDefault();
   
   document.getElementById("portada").style.display="none";
-  document.getElementById("information").style.display="block"; })
-  //aqui debe aparecer la pagina de la información de los pokemones
+  document.getElementById("information").style.display="block";
+  imagePokemon(); //aqui se agrega las imagenes de los pokemon
+})
 
-  const containerRoot = document.getElementById("root");
-  const showData = (POKEMON.pokemon)                      //1. crear una constante para ver la data
-    console.log(showData)
+
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -26,12 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // interaccion del boton filtrar por tipo
 
 document.getElementById("select2").addEventListener("change",() =>{
-    document.getElementById("resultado").innerHTML = " " 
+    document.getElementById("ordenado").innerHTML = " "  //cambiamos nombre de div en esta interacción
       
      let tipo =document.getElementById("select2").value
       for (let i = 0; i <window.pokego2.filterData(window.POKEMON.pokemon, tipo).length ; i++){   
 
-       document.getElementById("resultado").innerHTML += ` 
+       document.getElementById("ordenado").innerHTML += ` 
        <div class="col s12 m4">
        <h4 class="header"><b># ${window.pokego2.filterData(window.POKEMON.pokemon, tipo)[i].num}</b></h4>
        <div class="card horizontal">
@@ -69,18 +67,18 @@ const div_contenedor = document.getElementById("ordenado"); //imprime el listado
       div_contenedor.innerHTML=""
 
       if (document.getElementById("select1").value === "a-z" || document.getElementById("select1").value === "z-a") {
-        for (let i = 0; i < POKEMON.pokemon.length ;i++) {
+        for (let i = 0; i < window.POKEMON.pokemon.length ;i++) {
      
         document.getElementById("ordenado").innerHTML +=` 
         <div class="col s12 m4">
-        <h4 class="header">#${pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].num}</h4>
+        <h4 class="header">#${window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].num}</h4>
         <div class="card horizontal">
           <div class="card-image">
-            <img src="${window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].img}" alt="${pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].img}">
+            <img src="${window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].img}" alt="${window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].img}">
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <p> ${pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].name}</p>
+              <p> ${window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)[i].name}</p>
             </div>
             <div class="card-action">
                 <button class="ficha waves-effect waves btn modal-trigger  " href="#modal1" >Ficha pokemon</button>
@@ -90,21 +88,21 @@ const div_contenedor = document.getElementById("ordenado"); //imprime el listado
       </div>        
      `    
      ;}
-     abrirFicha(pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)); 
+     abrirFicha(window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)); 
      }     
 
     if (document.getElementById("select1").value === "1-151"){
     for (let i = 0; i < window.POKEMON.pokemon.length ;i++) {
     document.getElementById("ordenado").innerHTML += `
     <div class="col s12 m4">
-        <h4 class="header">#${pokego.sortData(window.POKEMON.pokemon, "number", document.getElementById("select1").value)[i].num}</h4>
+        <h4 class="header">#${window.pokego.sortData(window.POKEMON.pokemon, "number", document.getElementById("select1").value)[i].num}</h4>
         <div class="card horizontal">
           <div class="card-image">
-            <img src="${window.pokego.sortData(window.POKEMON.pokemon, "number", document.getElementById("select1").value)[i].img}" alt="${pokego.sortData(window.POKEMON.pokemon, "number", document.getElementById("select1").value)[i].img}">
+            <img src="${window.pokego.sortData(window.POKEMON.pokemon, "number", document.getElementById("select1").value)[i].img}" alt="${window.pokego.sortData(window.POKEMON.pokemon, "number", document.getElementById("select1").value)[i].img}">
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <p> ${pokego.sortData(window.POKEMON.pokemon, "number", document.getElementById("select1").value)[i].name}</p>
+              <p> ${window.pokego.sortData(window.POKEMON.pokemon, "number", document.getElementById("select1").value)[i].name}</p>
             </div>
             <div class="card-action">
                 <button class="ficha waves-effect waves btn modal-trigger "href="#modal1" >Ficha pokemon</button>
@@ -126,11 +124,11 @@ const div_contenedor = document.getElementById("ordenado"); //imprime el listado
           
 //aquí va la interaccion de las fichas por pokemon
 
-         let fichaPokemon =  document.getElementsByClassName("ficha");
-          function abrirFicha(data){
-            for (let i=0; i < fichaPokemon.length; i++){
-              fichaPokemon[i].addEventListener("click",()=>{
-                document.getElementById("probandomodal").innerHTML =`
+let fichaPokemon = document.getElementsByClassName("ficha");
+function abrirFicha(data) {
+  for (let i = 0; i < fichaPokemon.length; i++) {
+    fichaPokemon[i].addEventListener("click", () => {
+      document.getElementById("probandomodal").innerHTML = `
                 <div id="modal1" class="modal">   
                 <div class="row">
                  <div class="col s12 m7 l4">
@@ -182,19 +180,35 @@ const div_contenedor = document.getElementById("ordenado"); //imprime el listado
                 </div>
                 </div>             
                 </div>`;
-      M.AutoInit();
-      })
-              }
+      window.M.AutoInit();
+    })
+  }
 
-            }
+}
             
-             
-              
-              
-            
-           
-   
+    //  aqui se muestran las imagenes de los pokemon en el inicio
 
+function imagePokemon (){
+  for (let i = 0; i < window.POKEMON.pokemon.length ;i++) {
+    document.getElementById("ordenado").innerHTML += `
+    <div class="col s12 m4">
+        <h4 class="header">#${window.POKEMON.pokemon[i].num}</h4>
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="${window.POKEMON.pokemon[i].img}" alt="${window.POKEMON.pokemon[i].img}">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p> ${window.POKEMON.pokemon[i].name}</p>
+            </div>
+          </div>
+        </div>
+      </div>  `      
+}
+         
+}
+              
+            
 
 
 
