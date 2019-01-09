@@ -70,7 +70,7 @@ describe('pokego.sortData', () => {
       assert.equal(typeof window.pokego.computeStats, 'function');
     })
   
-    it('debe retornar "el porcentaje de pokemones que aparecen a las 01:00 hrs"', () => {
+    it('debe retornar "el porcentaje de pokemon que aparecen a las 01:00 hrs"', () => {
       assert.deepEqual(window.pokego.computeStats(window.POKEMON.pokemon, "01:"), 13.907284768211921)
     })
 
