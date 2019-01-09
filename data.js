@@ -69,7 +69,8 @@ computeStats:(data, hours) => {
       }
 
     })
-    return Math.round(100 * counter/151)
+
+    return Math.round(100 * counter/151) //redondeamos porcentaje
   }
 
 }
