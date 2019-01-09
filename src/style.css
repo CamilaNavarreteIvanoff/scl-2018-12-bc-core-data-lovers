@@ -28,9 +28,6 @@ body{
 }
 
 
-    
-
-
 .dropdown-content li>span {
     font-size: 16px;
     color:  #326AB1;
@@ -45,6 +42,7 @@ body{
     background-color:#E81E28;
     text-align: center;
     letter-spacing: .5px;}
+
 
 .card {
     background-color: white;
@@ -132,6 +130,7 @@ body{
     visibility: visible;
   }
 
+
 #information{
     display: none;
     
@@ -174,6 +173,8 @@ top: 50%;
 bottom: 0%;
 }
 
+
 .botonOcultar {
     display: none;
     }
+
