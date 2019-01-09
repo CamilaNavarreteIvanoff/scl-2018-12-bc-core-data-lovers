@@ -19,7 +19,7 @@ document.getElementById("go").addEventListener("click", (evento) =>{
 
 
 
-  // 
+  // window.onload = showData(window.pokego);
 
   
   
