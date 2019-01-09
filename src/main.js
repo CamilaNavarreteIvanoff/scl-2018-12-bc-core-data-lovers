@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
   window.M.AutoInit();
+  ImageMap('img[usemap]');
 });
 
 
 
 //INTERACCION BOTON GO
-document.getElementById("go").addEventListener("click", (evento) =>{
-  evento.preventDefault();
-  
-  document.getElementById("portada").style.display="none";
-  document.getElementById("information").style.display="block";
-  imagePokemon(); //aqui se agrega las imagenes de los pokemon
+// document.getElementById("go").addEventListener("click", (evento) =>{
+//   evento.preventDefault();
+=======
+ // document.getElementById("portada").style.display="none";
+  //document.getElementById("information").style.display="block";
+  //imagePokemon(); //aqui se agrega las imagenes de los pokemon
 })
-
 
 
 
@@ -20,6 +20,7 @@ document.getElementById("go").addEventListener("click", (evento) =>{
 document.addEventListener('DOMContentLoaded', function() {
     window.M.AutoInit();
   });
+
   
   // interaccion del boton filtrar por tipo
 
@@ -186,6 +187,62 @@ function abrirFicha(data) {
 
 }
             
+
+//visualización del calculo      
+
+const resul = document.querySelector("#resul")
+document.getElementById("uno").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "01:")}`
+});
+
+
+document.getElementById("dos").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "02:")}`
+});
+
+document.getElementById("tres").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "03:")}`
+});
+
+document.getElementById("cuatro").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "04:")}`
+});
+
+document.getElementById("cinco").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "05:")}`
+});
+
+document.getElementById("seis").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "06:")}`
+});
+
+document.getElementById("siete").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "07:")}`
+});
+
+document.getElementById("ocho").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "08:")}`
+});
+
+document.getElementById("nueve").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "09:")}`
+});
+
+document.getElementById("diez").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "10:")}`
+});
+
+document.getElementById("once").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "11:")}`
+});
+
+document.getElementById("doce").addEventListener("click", () => {
+  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "12:")}`
+});
+           
+            
+
+
     //  aqui se muestran las imagenes de los pokemon en el inicio
 
 function imagePokemon (){
@@ -209,6 +266,7 @@ function imagePokemon (){
 }
               
             
+
 
 
 
