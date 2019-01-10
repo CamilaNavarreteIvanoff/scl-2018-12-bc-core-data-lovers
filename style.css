@@ -195,3 +195,8 @@ bottom: 0%;
     color: #FECB0A;
     top:30px;  
     width: 360px;
+}
+
+#calculo{
+    display: none
+}
