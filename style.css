@@ -94,8 +94,8 @@ body{
   }
 
 .icon{
- width: 30px;
- color:#093375;
+    width: 30px;
+    color:#093375;
 }
 
 .nameType{
@@ -150,10 +150,10 @@ body{
 
 .textoIntro{
     position: absolute;
-left: 23%;;
-right: -0.22%;
-top: 50%;
-bottom: 0%;
+    left: 23%;;
+    right: -0.22%;
+    top: 50%;
+    bottom: 0%;
 
 font-family: Helvetica;
 font-style: bold;
@@ -168,9 +168,9 @@ color: #000000;
     
     width: 100%;
     left: 23%;;
-right: -0.22%;
-top: 50%;
-bottom: 0%;
+    right: -0.22%;
+    top: 50%;
+    bottom: 0%;
 }
 
 
@@ -197,6 +197,15 @@ bottom: 0%;
     width: 360px;
 }
 
-#calculo{
+#calculo {
     display: none
+}
+
+.text{
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 24px;
+    color: black;
+
 }
