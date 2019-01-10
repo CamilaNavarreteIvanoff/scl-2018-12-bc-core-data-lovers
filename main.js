@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
   window.M.AutoInit();
-  ImageMap('img[usemap]');
+  window.ImageMap('img[usemap]');
 });
 
 
 
+<<<<<<< HEAD
 //INTERACCION BOTON GO
 // document.getElementById("go").addEventListener("click", (evento) =>{
 //   evento.preventDefault();
@@ -13,6 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
   //document.getElementById("information").style.display="block";
   //imagePokemon(); //aqui se agrega las imagenes de los pokemon
 //})
+=======
+// INTERACCION BOTON GO
+document.getElementById("go").addEventListener("click", (evento) =>{
+  evento.preventDefault();
+ document.getElementById("portada").style.display="none";
+  document.getElementById("information").style.display="block";
+  imagePokemon(); //aqui se agrega las imagenes de los pokemon
+})
+>>>>>>> 7597ad7e9e3941532e33346d5fff0c61c9639e93
 
 
 
