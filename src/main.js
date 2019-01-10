@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
 //INTERACCION BOTON GO
 // document.getElementById("go").addEventListener("click", (evento) =>{
 //   evento.preventDefault();
-=======
+
  // document.getElementById("portada").style.display="none";
   //document.getElementById("information").style.display="block";
   //imagePokemon(); //aqui se agrega las imagenes de los pokemon
-})
+//})
 
 
 
