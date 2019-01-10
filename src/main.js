@@ -190,54 +190,106 @@ const div_contenedor = document.getElementById("ordenado"); //imprime el listado
             
       
 
-const resul = document.querySelector("#resul")
+const result = document.querySelector("#result")
 document.getElementById("uno").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "01:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "01:")}`
 });
 
 
 document.getElementById("dos").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "02:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "02:")}`
 });
 
 document.getElementById("tres").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "03:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "03:")}`
 });
 
 document.getElementById("cuatro").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "04:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "04:")}`
 });
 
 document.getElementById("cinco").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "05:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "05:")}`
 });
 
 document.getElementById("seis").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "06:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "06:")}`
 });
 
 document.getElementById("siete").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "07:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "07:")}`
 });
 
 document.getElementById("ocho").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "08:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "08:")}`
 });
 
 document.getElementById("nueve").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "09:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "09:")}`
 });
 
 document.getElementById("diez").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "10:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "10:")}`
 });
 
 document.getElementById("once").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "11:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "11:")}`
 });
 
 document.getElementById("doce").addEventListener("click", () => {
-  resul.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "12:")}`
+  result.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "12:")}`
+});
+
+
+
+const resultTwo = document.querySelector("#resultTwo")
+document.getElementById("trece").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "13:")}`
+});
+
+
+document.getElementById("catorce").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "14:")}`
+});
+
+document.getElementById("quince").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "15:")}`
+});
+
+document.getElementById("dieciseis").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "16:")}`
+});
+
+document.getElementById("diecisiete").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "17:")}`
+});
+
+document.getElementById("dieciocho").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "18:")}`
+});
+
+document.getElementById("diecinueve").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "19:")}`
+});
+
+document.getElementById("veinte").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "20:")}`
+});
+
+document.getElementById("veintiuno").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "21:")}`
+});
+
+document.getElementById("veintidos").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "22:")}`
+});
+
+document.getElementById("veintitres").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "23:")}`
+});
+
+document.getElementById("veinticuatro").addEventListener("click", () => {
+  resultTwo.innerHTML = ` ${window.pokego.computeStats(window.POKEMON.pokemon, "00:")}`
 });
            
             
