@@ -28,7 +28,7 @@ Algunas paginas visitadas:
 
 ### **Entrevista**  
 
-Entrevistamos a XXX personas, las preguntas y respuestas son las sientes.
+Entrevistamos a 5 personas, las preguntas y respuestas son las sientes.
 
 1- ¿Qué son los team? para saber como clasificamos los pokemones
 
@@ -116,16 +116,16 @@ Diseñamos protptipo de pagina que consta de tres pantalla, la primera es de bie
 
 En esta imagen se muestra el protitpo de flujo de nuestra pagina
 
-![imagen 1](img/Sketch1.jpeg) 
-<img src= "mg/Sketch1.jpeg" >
+![imagen 1](img/Sketch1.png) 
+<img src= "src/img/Sketch1" >
 
 Aquí detallamos como se va a interactuar la información en la pantalla dos:
 
-![imagen 2](img/Sketch2.jpeg)
+![imagen 2](img/Sketch2.png)
 
 En esta última imagen es como tenemos pensado mostrar nuestro calculo de data.
 
-![imagen 3](img/Sketch3.jpeg)
+![imagen 3](img/Sketch3.png)
 
 ### **Prototipo de alta de nuestra pagina Pokego!**
 
@@ -149,7 +149,7 @@ Las observaciones que tuvimos de los usuarios frente a nuestro prototipo de pagi
  
 Paleta de colores usada en la interfaz:
 
-![Paleta de colores](img/paleta_de_colores.jpg)
+![Paleta de colores](img/paleta.png)
 
 
 ### **Flujo interactivo de PokeGO!**
