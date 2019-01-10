@@ -17,7 +17,8 @@ document.getElementById("go").addEventListener("click", (evento) =>{
 document.getElementById("btnCalculo").addEventListener("click", () =>{
   document.getElementById("information").style.display="none";
   document.getElementById("portada").style.display="none";
-  document.getElementById("calculo").style.display="block"; 
+  document.getElementById("calculo").style.display="block";
+  window.ImageMap('img[usemap]') 
 })
 
 //Aqui va boton volver del logo GO!

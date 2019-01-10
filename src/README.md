@@ -28,7 +28,7 @@ Algunas paginas visitadas:
 
 ### **Entrevista**  
 
-Entrevistamos a 5 personas, las preguntas y respuestas son las sientes.
+Entrevistamos a 5 personas, las respuestas frente a las preguntas son las siguientes:
 
 1- ¿Qué son los team? para saber como clasificamos los pokemones
 
@@ -38,14 +38,13 @@ Son tres grandes equipos, rojo, amarillo y azul, cuando comienzo a jugar me hace
 
 El pokemon que es más fuerte y más débil, en cuanto combate. PC (poder de combate), clasificar por tipo (fuego, agua, etc.)
 
-3- ¿Juegas sólo para coleccionar pokemones o para batallar?
+3- ¿Juegan sólo para coleccionar pokemon o para batallar?
 
-alex: para batallar
-Anice: para coleccionar
+Para batallar y para coleccionar
 
-4- ¿que fue lo primero que investigaste para poder combatir o coleccionar?
+4- ¿Qué fue lo primero que investigaron para poder combatir o coleccionar?
 
-Alex y anice aprendieron por la serie y con videojuegos que tenían de antes. Buscaron por foro y por amigos.
+Aprendieron por la serie y con videojuegos que tenían de antes, buscaron por foro, por amigos y google. 
 
 
 ### **Historia de usuario**
@@ -149,6 +148,8 @@ Las observaciones que tuvimos de los usuarios frente a nuestro prototipo de pagi
 Paleta de colores usada en la interfaz:
 
 ![Paleta de colores](img/paleta.png)
+
+
 
 
 ### **Flujo interactivo de PokeGO!**
