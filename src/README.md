@@ -116,16 +116,16 @@ Diseñamos protptipo de pagina que consta de tres pantalla, la primera es de bie
 
 En esta imagen se muestra el protitpo de flujo de nuestra pagina
 
-![imagen 1](img/Sketch1.png) 
+![imagen 1](img/sketch1.png) 
 <img src= "src/img/Sketch1" >
 
 Aquí detallamos como se va a interactuar la información en la pantalla dos:
 
-![imagen 2](img/Sketch2.png)
+![imagen 2](img/sketch2.png)
 
 En esta última imagen es como tenemos pensado mostrar nuestro calculo de data.
 
-![imagen 3](img/Sketch3.png)
+![imagen 3](img/sketch3.png)
 
 ### **Prototipo de alta de nuestra pagina Pokego!**
 
