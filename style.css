@@ -178,3 +178,20 @@ bottom: 0%;
     display: none;
     }
 
+.porcentaje{ 
+    color: #FECB0A;
+    top:30px;  
+    width: 360px;
+}
+
+.contenido {
+    -webkit-box-sizing: inherit;
+    box-sizing: border-box;
+    left: 220px;
+    top: -800px;
+}
+
+.porcentajeDos{ 
+    color: #FECB0A;
+    top:30px;  
+    width: 360px;
