@@ -20,7 +20,13 @@ document.getElementById("btnCalculo").addEventListener("click", () =>{
   document.getElementById("calculo").style.display="block"; 
 })
 
+//Aqui va boton volver del logo GO!
+document.getElementById("brand-logo").addEventListener("click", () =>{
+document.getElementById("calculo").style.display="none";
+document.getElementById("information").style.display="block";
+imagePokemon();
 
+})
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -95,6 +101,7 @@ const div_contenedor = document.getElementById("ordenado"); //imprime el listado
       </div>        
      `    
      ;}
+
      abrirFicha(window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)); 
      }     
 
@@ -120,6 +127,7 @@ const div_contenedor = document.getElementById("ordenado"); //imprime el listado
     
           
     }
+    abrirFicha(window.pokego.sortData(window.POKEMON.pokemon, "number", document.getElementById("select1").value)); 
 
     }});
 
