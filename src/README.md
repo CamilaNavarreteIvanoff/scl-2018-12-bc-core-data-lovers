@@ -18,7 +18,15 @@ Como se ha señalado anteriormente esta pagina esta pensada para jovenes y la ed
 
 Para definir el contenido y estructura de la interfaz comenzamos investigando otras paginas web para saber de que manera nos podríamos diferenciar y además realizamos entrevistas a jugadores de Pokemon Go!.
 
-**Entrevistas**  
+Algunas paginas visitadas:
+
+[Página 1](https://db.pokemongohub.net/pokemon-list/type-ground)
+
+[Página 2](https://es.wikihow.com/jugar-Pok%C3%A9mon-GO)
+
+[Página 3](http://es.pokemon.wikia.com/wiki/Tipo_planta)
+
+### **Entrevista**  
 
 Entrevistamos a XXX personas, las preguntas y respuestas son las sientes.
 
@@ -40,7 +48,7 @@ Anice: para coleccionar
 Alex y anice aprendieron por la serie y con videojuegos que tenían de antes. Buscaron por foro y por amigos.
 
 
-**Historia de usuario**
+### **Historia de usuario**
 
 Con la información obtenida mendiante las entrevistas e investigación por internet podemos diseñar la historia de usuario:
 
@@ -66,7 +74,7 @@ Criterios de aceptación, historia 2
 
 Dada: La opcion que aparece en la pagina web
 Cuando: El jugador hace click en "Hora"
-Entonces: Se muestra el porcentaje de pokemon que aparece en una hora determinada
+Entonces: Se muestra el listado de pokemon que aparece en una hora determinada
 
 Historia Nº 3
 
@@ -80,7 +88,7 @@ Dada: A un listado de pokemon que se despliega en la pagina, el usuario hace cli
 Cuando: Se carga la pagina con ese pokemon
 Entonces: Aparecerá el listado de características del pokemon.
 
-**Definición de Terminado**
+### **Definición de Terminado**
 
 Historia Nº 1
 
@@ -93,7 +101,7 @@ Historia Nº 2
 
 * En la parte superior de la página habrá un boton con el nombre de "hora de aparición"
 * Al hacer click en el boton aparece una nueva pagina.
-* En la pagina estará la imagen de un reloj donde el usuario posiciona el cursor sobre una hora determinada y se mostrará el porcentaje de pokemones que aparen en esa hora.
+* En la pagina estará la imagen de un reloj donde el usuario posiciona el cursor sobre una hora determinada y se mostrará el listado de pokemon que aparen en esa hora.
 
 Historia Nº 3
 
@@ -101,6 +109,64 @@ Historia Nº 3
 * Aparece el listado de imagenes de todos los pokemones ordenados por numero
 * En la parte superior de la pagina habrá un "select" donde aparece la opción de ordenar el listado de pokemones por alfabeto, que puede ser desde la A/Z o Z/A y por numero.
 * El usuario al hacer click en una imagen tendrá la posibilidad de conocer la ficha técnica/descriptiva del pokemon.
+
+### **Prototipo de baja de nuestra pagina PokeGo!**
+
+Diseñamos protptipo de pagina que consta de tres pantalla, la primera es de bienvenida y con un boton "GO" el usuario podrá interactuar con la información que desea obtener. La segunda pantalla es donde se despliega todos los pokemones donde el usuario puede ordenar los 151 pokemones por orden alfabetico ascendente y descendente y por numero, tambien mostraremos la opcion de que pueda tener más información sobre como ser un maestro pokemon, guia de como jugar PokemonGo! y saber la cantidad de pokemones que aparecen por hora durante el día. Éste último es la tercera pantalla donde lo vamos a interactuar con un reloj.
+
+En esta imagen se muestra el protitpo de flujo de nuestra pagina
+
+
+
+![imagen 1](img/Sketch1.jpeg) 
+
+
+
+Aquí detallamos como se va a interactuar la información en la pantalla dos:
+
+![imagen 2](img/Sketch2.jpeg)
+
+En esta última imagen es como tenemos pensado mostrar nuestro calculo de data.
+
+![imagen 3](img/Sketch3.jpeg)
+
+### **Prototipo de alta de nuestra pagina Pokego!**
+
+Luego de testar y analizar nuestro prototipo de baja, diseñamos nuestro prototipo de alta en Figma y lo exportamos a Zeplin.
+
+[Ver prototipo en alta en Figma](https://www.figma.com/file/NZ8W3KBrc3oz3UcEUSb8PIuo/PokeGO?node-id=0%3A1)
+
+[Exportación del proyecto de Figma a Zeplin](https://zpl.io/29oOzrw)
+
+El prototipo en alta fue testeado y grabado:
+
+[Video uno de testeabilidad](https://github.com/AnaGalvezSalas11/scl-2018-12-bc-core-data-lovers/blob/master/src/Videos%2C%20testeo%20de%20pagina%20en%20alta/Diego.mp4)
+
+[Video dos de testeabilidad](https://github.com/AnaGalvezSalas11/scl-2018-12-bc-core-data-lovers/blob/master/src/Videos%2C%20testeo%20de%20pagina%20en%20alta/Nicolas.mp4)
+
+Las observaciones que tuvimos de los usuarios frente a nuestro prototipo de pagina web fue:
+
+* Que en el reloj donde damos a conocer el listado de pokemon, debieramos dar la opción de conocer la ficha descroptiva de cada uno de ellos al hacer click (como en la pantalla 2)
+
+* Que en la ficha descriptiva de cada pokemon indicar de que manera es la evolución por pokemon.
+ 
+Paleta de colores usada en la interfaz:
+
+E9F6FE, #FECB0A, #FECA09, #B2B8C4, #C3A116, #E81E28, #326AB1, #3863A6, #3561AC, #565D63, #114A97, #093375, #09224D, #09214D, #000000, #000000.
+
+### **Flujo interactivo de PokeGO!**
+
+
+
+
+
+### **Planificación en Trello**
+
+[Trello PokeGO!](https://trello.com/b/J9VDuFEc/pokemon-go)
+
+
+
+
 
 
 
