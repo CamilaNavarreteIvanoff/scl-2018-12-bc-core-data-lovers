@@ -154,14 +154,12 @@ body{
     right: -0.22%;
     top: 50%;
     bottom: 0%;
-
-font-family: Helvetica;
-font-style: bold;
-font-weight: normal;
-line-height: normal;
-font-size:24px;
-
-color: #000000;
+    font-family: Helvetica;
+    font-style: bold;
+    font-weight: normal;
+    line-height: normal;
+    font-size:24px;
+    color: #000000; 
 }
 
 .button{
@@ -198,8 +196,10 @@ color: #000000;
 }
 
 #calculo {
-    display: none
-}
+    display: none;
+    
+    }
+
 
 .text{
     font-style: normal;
@@ -208,4 +208,17 @@ color: #000000;
     font-size: 24px;
     color: black;
 
+}
+
+.relojPm{
+        padding: 5px 10px 5px 10px;
+        margin:2px;
+        float:left;
+        width:200px;
+        text-align:center;
+        
+}
+
+.text2{
+    text-align: center;
 }
