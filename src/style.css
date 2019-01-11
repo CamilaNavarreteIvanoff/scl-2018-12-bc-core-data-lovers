@@ -1,4 +1,3 @@
-
 .nav-wrapper {
     background-color:#FECB0A !important;
         
@@ -7,6 +6,7 @@
 body{
     background-image: url(img/fondo.png); 
     background-size: cover; 
+    
     
 }
 
@@ -160,6 +160,7 @@ body{
     line-height: normal;
     font-size:24px;
     color: #000000; 
+
 }
 
 .button{
@@ -176,11 +177,11 @@ body{
     display: none;
     }
 
-.porcentaje{ 
-    color: #FECB0A;
-    top:30px;  
-    width: 360px;
-}
+/* .porcentaje{ 
+    position: absolute;
+    top:50px;  
+    width: 560px;
+} */
 
 .contenido {
     -webkit-box-sizing: inherit;
@@ -196,10 +197,9 @@ body{
 }
 
 #calculo {
-    display: none;
-    
-    }
 
+    display: none
+}
 
 .text{
     font-style: normal;
@@ -207,6 +207,15 @@ body{
     line-height: normal;
     font-size: 24px;
     color: black;
+
+}
+
+.card-content white-text{
+    position: absolute;
+    top:50px;
+}
+
+
 
 }
 
@@ -222,3 +231,4 @@ body{
 .text2{
     text-align: center;
 }
+
