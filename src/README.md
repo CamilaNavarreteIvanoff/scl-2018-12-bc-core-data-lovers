@@ -152,7 +152,6 @@ Las observaciones que tuvimos de los usuarios frente a nuestro prototipo de pagi
  
 Paleta de colores usada en la interfaz:
 
-E9F6FE, #FECB0A, #FECA09, #B2B8C4, #C3A116, #E81E28, #326AB1, #3863A6, #3561AC, #565D63, #114A97, #093375, #09224D, #09214D, #000000, #000000.
 
 ### **Flujo interactivo de PokeGO!**
 
