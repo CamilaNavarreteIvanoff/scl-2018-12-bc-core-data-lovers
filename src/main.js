@@ -6,15 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // INTERACCION BOTON GO
-document.getElementById("go").addEventListener("click", (evento) =>{
+  document.getElementById("go").addEventListener("click", (evento) =>{
   evento.preventDefault();
- document.getElementById("portada").style.display="none";
+  document.getElementById("portada").style.display="none";
   document.getElementById("information").style.display="block";
   imagePokemon(); //aqui se agrega las imagenes de los pokemon
 })
 
 //AQUI VA BOTON CALCULAR
-document.getElementById("btnCalculo").addEventListener("click", () =>{
+  document.getElementById("btnCalculo").addEventListener("click", () =>{
   document.getElementById("information").style.display="none";
   document.getElementById("portada").style.display="none";
   document.getElementById("calculo").style.display="block";
@@ -332,11 +332,4 @@ function imagePokemon (){
          
 }
               
-            
-
-
-
-
-
- 
-
+          
