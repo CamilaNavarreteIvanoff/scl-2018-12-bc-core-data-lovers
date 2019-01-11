@@ -181,7 +181,7 @@ function abrirFicha(data) {
                      <div class="responsive-image">
                        <img src="${data[i].img}">                                          
                         </div>
-                        <div class="tooltip">?
+                        <div class="tooltip">
                         <span class="tooltiptext">
                         Conteo de dulces:cantidad para evolucionar
                         Huevo:cantidad de km a recorrer
