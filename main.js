@@ -5,16 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-<<<<<<< HEAD
-//INTERACCION BOTON GO
-// document.getElementById("go").addEventListener("click", (evento) =>{
-//   evento.preventDefault();
-
- // document.getElementById("portada").style.display="none";
-  //document.getElementById("information").style.display="block";
-  //imagePokemon(); //aqui se agrega las imagenes de los pokemon
-//})
-=======
 // INTERACCION BOTON GO
 document.getElementById("go").addEventListener("click", (evento) =>{
   evento.preventDefault();
@@ -22,9 +12,22 @@ document.getElementById("go").addEventListener("click", (evento) =>{
   document.getElementById("information").style.display="block";
   imagePokemon(); //aqui se agrega las imagenes de los pokemon
 })
->>>>>>> 7597ad7e9e3941532e33346d5fff0c61c9639e93
 
+//AQUI VA BOTON CALCULAR
+document.getElementById("btnCalculo").addEventListener("click", () =>{
+  document.getElementById("information").style.display="none";
+  document.getElementById("portada").style.display="none";
+  document.getElementById("calculo").style.display="block";
+  window.ImageMap('img[usemap]') 
+})
 
+//Aqui va boton volver del logo GO!
+document.getElementById("brand-logo").addEventListener("click", () =>{
+document.getElementById("calculo").style.display="none";
+document.getElementById("information").style.display="block";
+imagePokemon();
+
+})
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -99,6 +102,7 @@ const div_contenedor = document.getElementById("ordenado"); //imprime el listado
       </div>        
      `    
      ;}
+
      abrirFicha(window.pokego.sortData(window.POKEMON.pokemon, "name", document.getElementById("select1").value)); 
      }     
 
@@ -124,6 +128,7 @@ const div_contenedor = document.getElementById("ordenado"); //imprime el listado
     
           
     }
+    abrirFicha(window.pokego.sortData(window.POKEMON.pokemon, "number", document.getElementById("select1").value)); 
 
     }});
 
@@ -176,7 +181,7 @@ function abrirFicha(data) {
                      <div class="responsive-image">
                        <img src="${data[i].img}">                                          
                         </div>
-                        <div class="tooltip">?
+                        <div class="tooltip">
                         <span class="tooltiptext">
                         Conteo de dulces:cantidad para evolucionar
                         Huevo:cantidad de km a recorrer
