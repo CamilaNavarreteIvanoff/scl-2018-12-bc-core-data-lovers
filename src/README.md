@@ -3,22 +3,22 @@
 
 ## **Introducción**
 
-Pokego es una pagina web dirigida a jovenes principiantes que estan interesados en conocer los 151 pokemones de la región de Kanto, mediante nuestra pagina podrán acceder a una ficha informativa de cada uno de ellos (donde se detalla sus debilidades, tipo, peso, etc.), obtener información adicional de como ser un maestro pokemon, saber la cantidad de pokemones que aparecen por hora. Los contenidos de nuestra web permitiriá a los usuarios tener información basica sobre PokemonGo! y jugar con mayor información.
+Pokego es una página web dirigida a jóvenes principiantes que están interesados en conocer los 151 pokemón de la región de Kanto, mediante nuestra página podrán acceder a una ficha informativa de cada uno de ellos (dónde se detalla sus debilidades, tipo, peso, etc.), obtener información adicional de como ser un maestro Pokemón y saber la cantidad de Pokemon que aparecen por hora. Los contenidos de nuestra web permitiría a los usuarios tener más conocimiento sobre Pokemón Go! y jugar con mayor información.
 
-Como se ha señalado anteriormente esta pagina esta pensada para jovenes y la edad promedio es entre 18 y 30 años, dado a que los estudios que se han realizado demuestran que ocupan el 46% del total de la poblacion que juega PokemonGo!, (como se muestra en la siguiente imagen):
-
-
-
-![estadistica](https://media.redadn.es/imagenes/pokemon-go-android_291424.jpg)
+Como se ha señalado anteriormente esta página esta pensada para jóvenes y la edad promedio es entre 18 y 30 años, dado a que los estudios que se han realizado demuestran que ocupan el 46% del total de la población que juega PokemonGo!, (como se muestra en la siguiente imagen):
 
 
 
+![estadística](https://media.redadn.es/imagenes/pokemon-go-android_291424.jpg)
 
-## **Ideación de diseño**
 
-Para definir el contenido y estructura de la interfaz comenzamos investigando otras paginas web para saber de que manera nos podríamos diferenciar y además realizamos entrevistas a jugadores de Pokemon Go!.
 
-Algunas paginas visitadas:
+
+## **Ideación de Diseño**
+
+Para definir el contenido y estructura de nuestra interfaz comenzamos investigando otras páginas web para saber de que manera nos podríamos diferenciar y además realizamos entrevistas a jugadores de Pokemón Go!.
+
+Algunas páginas visitadas:
 
 [Página 1](https://db.pokemongohub.net/pokemon-list/type-ground)
 
@@ -30,17 +30,17 @@ Algunas paginas visitadas:
 
 Entrevistamos a 5 personas, las respuestas frente a las preguntas son las siguientes:
 
-1- ¿Qué son los team? para saber como clasificamos los pokemones
+1- ¿Qué son los team? (para saber como clasificamos los pokemones)
 
-Son tres grandes equipos, rojo, amarillo y azul, cuando comienzo a jugar me hacen elegir un color, solo una vez se puede cambiar. Los gimnasios están determinados por color y puede cambiar a través de una batalla y queda para el color ganador.
+Son tres grandes equipos, rojo, amarillo y azul, cuando se comienza a jugar hay que elegir un color, sólo una vez se puede cambiar. Los gimnasios están determinados por color y puede cambiar a través de una batalla y queda para el color ganador.
 
 2- ¿Qué aspectos relevantes debemos considerar en nuestra web para principiantes?
 
-El pokemon que es más fuerte y más débil, en cuanto combate. PC (poder de combate), clasificar por tipo (fuego, agua, etc.)
+El Pokemón que es más fuerte y más débil, en cuanto combate. PC (poder de combate), clasificar por tipo (fuego, agua, etc.)
 
-3- ¿Juegan sólo para coleccionar pokemon o para batallar?
+3- ¿Juegan sólo para coleccionar Pokemón o para batallar?
 
-Para batallar y para coleccionar
+Para batallar y para coleccionar.
 
 4- ¿Qué fue lo primero que investigaron para poder combatir o coleccionar?
 
@@ -54,47 +54,64 @@ Con la información obtenida mendiante las entrevistas e investigación por inte
 Historia Nº 1
 
 Como: Jugador principiante de pokemon go.
+
 Quiero: Saber los tipos de pokemon que hay.
+
 Para: Tener una visión más amplia de los pokemon que hay por grupo.
 
 Criterios de aceptación de Historia Nº 1:
 
 Dada: La información de los grupos que hay.
+
 Cuando: El usuario hace click en "Tipos de Pokemon".
-Entonces: Apareceran los grupos de pokemon que hay, en cada uno de ellos el listado de los pokemon que lo integran.
+
+Entonces: Apareceran los grupos de Pokemón que hay, en cada uno de ellos el listado de los Pokemón que lo integran.
+
 
 Historia Nº 2
 
-Como: Jugador principiante de pokemon go.
-Quiero: Saber que pokemon son más probables de encontrar en una hora determinada.
+Como: Jugador principiante de Pokemón Go.
+
+Quiero: Saber que Pokemón son más probables de encontrar en una hora determinada.
+
 Para: Ver cuales puedo evolucionar primero.
+
 
 Criterios de aceptación, historia 2
 
-Dada: La opcion que aparece en la pagina web
-Cuando: El jugador hace click en "Hora"
-Entonces: Se muestra el listado de pokemon que aparece en una hora determinada
+Dada: La opcion que aparece en la pagina web.
+
+Cuando: El jugador hace click en "Hora".
+
+Entonces: Se muestra el listado de Pokemón que aparece en una hora determinada
+
 
 Historia Nº 3
 
-Como: Jugador principiante de Pokemon Go
-Quiero: Conocer todos los pokemon de la Región de Kanto
-Para: Aprender a jugar y ser un maestro pokemon.
+Como: Jugador principiante de Pokemón Go.
+
+Quiero: Conocer todos los Pokemón de la Región de Kanto.
+
+Para: Aprender a jugar y ser un maestro pokemón.
+
 
 Criterios aceptación Nº 3
 
-Dada: A un listado de pokemon que se despliega en la pagina, el usuario hace click en una imagen
-Cuando: Se carga la pagina con ese pokemon
+Dada: A un listado de Pokemón que se despliega en la página, el usuario hace click en una imagen.
+
+Cuando: Se carga la página con ese Pokemón.
+
 Entonces: Aparecerá el listado de características del pokemon.
+
 
 ### **Definición de Terminado**
 
 Historia Nº 1
 
 * Abrir el select "Tipos de Pokemon" haciendo click.
-* Se despliega las categoria que hay de pokemones.
+* Se despliega las categoría que hay de Pokemón.
 * El usuario debe seleccionar la categoria que quiere al hacer click.
-* Al hacer click va a aparecer los pokemones del tipo seleccionado.
+* Al hacer click va a aparecer los Pokemón del tipo seleccionado.
 
 Historia Nº 2
 
@@ -144,6 +161,9 @@ Las observaciones que tuvimos de los usuarios frente a nuestro prototipo de pagi
 * Que en el reloj donde damos a conocer el listado de pokemon, debieramos dar la opción de conocer la ficha descroptiva de cada uno de ellos al hacer click (como en la pantalla 2)
 
 * Que en la ficha descriptiva de cada pokemon indicar de que manera es la evolución por pokemon.
+
+* Les gustó que las debilidades aparezcan en colores (más visual) que solo nombrarlos.
+
  
 Paleta de colores usada en la interfaz:
 
@@ -155,6 +175,7 @@ Paleta de colores usada en la interfaz:
 ### **Flujo interactivo de PokeGO!**
 
 ![Flujo de usuario](img/Flujo_de_usuario.png)
+
 
 ### **Planificación en Trello**
 
