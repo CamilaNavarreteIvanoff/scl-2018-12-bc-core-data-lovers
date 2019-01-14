@@ -35,6 +35,7 @@ window.pokego = {
      return data;
 
     } 
+    
 
     if (sortBy === "number" && sortOrder === "1-151"){
       data.sort((a,b) =>{
@@ -54,7 +55,7 @@ window.pokego = {
   }
   
 },
-
+//podria cambiarlo por un map
 computeStats:(data, hours) => {
   let groupForHour = []
   let counter = 0
@@ -86,5 +87,9 @@ window.pokego2 = {
       }
     }
     
-
-    
+//obervaciones de Ale:
+ //cambiar las variables en ingles y que sean bien descriptivas
+ //trabajar más con arreglos
+ //revizar html semantico, hay muchos div y desorden
+ //css hay class duplicadas, falto DRY
+ //    
