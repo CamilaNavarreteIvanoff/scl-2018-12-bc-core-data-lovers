@@ -19,7 +19,7 @@ Al comenzar a jugar Pokémon Go las principales necesidades son:
 
  **3**: Conocer las debilidades de cada pokémon
 
- **4**: Saber cual atrapar(arreglar)
+ **4**: Saber cual atrapar
 
 
 ## **4.Historia de Usuario**
