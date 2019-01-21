@@ -1,22 +1,59 @@
 
-# POKEGO
+# POKÉGO
 
-## **Introducción**
-
-Pokego es una página web dirigida a jóvenes principiantes que están interesados en conocer los 151 pokemón de la región de Kanto, mediante nuestra página podrán acceder a una ficha informativa de cada uno de ellos (dónde se detalla sus debilidades, tipo, peso, etc.), obtener información adicional de como ser un maestro Pokemón y saber la cantidad de Pokemon que aparecen por hora. Los contenidos de nuestra web permitiría a los usuarios tener más conocimiento sobre Pokemón Go! y jugar con mayor información.
-
-Como se ha señalado anteriormente esta página esta pensada para jóvenes y la edad promedio es entre 18 y 30 años, dado a que los estudios que se han realizado demuestran que ocupan el 46% del total de la población que juega PokemonGo!, (como se muestra en la siguiente imagen):
+## **1.Descripción**
+PokeGo es una página web enfocada a personas que están empezando a jugar Pokémon GO, acá encontrarán información relevante sobre los pokémon de la región de Kanto que los ayudará a ser un mejor maestro pokémon.
 
 
+## **2.Definición de usuario**
+Según un estudio realizado por  SurveyMonkey Intelligence [(link)](https://pokemaster.es/quienes-juegan-mas-a-pokemon-go-no-98238/)
+las personas entre 18 y 30 años son las que más juegan cubriendo un 46% del total, otro dato es que 63% de los jugadores son mujeres, basándonos en estos datos y [encuestas](https://docs.google.com/document/d/1xwDvc6MG8ALrfxSsE2eRgYUtpB45hKrrdzfmq3OVdok/edit?usp=sharing) que se hicieron definimos un user person:
+![imagen 1](img/userdatos.png)
 
-![estadística](https://media.redadn.es/imagenes/pokemon-go-android_291424.jpg)
+## **3.Necesidad del usuario**
+Al comenzar a jugar Pokémon Go las principales necesidades son:
+
+ **1**: Conocer todos los pokémon de la región de Kanto
+
+ **2**: Saber que tipo son
+
+ **3**: Conocer las debilidades de cada pokémon
+
+ **4**: Saber cual atrapar(arreglar)
 
 
+## **4.Historia de Usuario**
+![imagen 2](img/historiausuario-01.png)
+![imagen 3](img/historiausuario-02.png)
 
+## **5.Definición de Terminado**
+Historia Nº 1
 
-## **Ideación de Diseño**
+* Al ingresar a la página principal el usuario hará clic en GO! para conocer a los pokémon.
+* Aparece el listado de imagenes de todos los pokémon ordenados por número.
+* En la parte superior de la pagina habrá un "select" donde aparece la opción de ordenar el listado de pokemones por alfabeto, que puede ser desde la A/Z o Z/A y por número.
+* El usuario al hacer click en una imagen tendrá la posibilidad de conocer la ficha técnica/descriptiva del pokemon.
 
-Para definir el contenido y estructura de nuestra interfaz comenzamos investigando otras páginas web para saber de que manera nos podríamos diferenciar y además realizamos entrevistas a jugadores de Pokemón Go!.
+Historia Nº 2
+
+* Abrir el select "Tipos de Pokemon" haciendo click.
+* Se despliegan las categoría que hay de Pokemón.
+* El usuario debe seleccionar la categoria que quiere al hacer clic.
+* Al hacer clic va a aparecer los Pokémon del tipo seleccionado.
+
+Historia Nº 3
+
+* En la parte superior de la página habrá un botón con el nombre de "hora de aparición"
+* Al hacer clic en el boton aparece una nueva página.
+* En la página estará la imagen de un reloj donde el usuario posiciona el cursor sobre una hora determinada y se mostrará el listado de pokémon que aparecen en esa hora.
+
+## **6.Ideación de Diseño**
+
+Para definir el contenido y estructura de nuestra interfaz comenzamos investigando otras páginas web para saber de que manera nos podríamos diferenciar y además realizamos entrevistas a jugadores de Pokémon Go!.
+
+(Sabiendo que la mayoría de jugadores crecieron en la década de los noventa, la nostalgia por la Primera Generación de Pokémon ha cumplido un papel importante para obtener estos resultados.)
+
+PokéGo es una página web dirigida a jóvenes principiantes que están interesados en conocer los 151 pokémon de la región de Kanto, mediante nuestra página podrán acceder a una ficha informativa de cada uno de ellos (dónde se detalla sus debilidades, tipo, peso, etc.), obtener información adicional para ser un maestro Pokémon y saber la cantidad de Pokémon que aparecen por hora. 
 
 Algunas páginas visitadas:
 
@@ -26,165 +63,108 @@ Algunas páginas visitadas:
 
 [Página 3](http://es.pokemon.wikia.com/wiki/Tipo_planta)
 
-### **Entrevista**  
 
-Entrevistamos a 5 personas, las respuestas frente a las preguntas son las siguientes:
+### **1.0 Prototipo baja fidelidad**
+Diseñamos un prototipo de página que consta de tres pantalla, la primera es de bienvenida y con un botón "GO" el usuario podrá interactuar con la información que desea obtener. La segunda pantalla es donde se despliega todos los pokemones donde el usuario puede ordenar los 151 pokemones por orden alfabetico ascendente y descendente y por número, tambien mostraremos la opción de que pueda tener más información sobre ser un maestro pokémon, guía de como jugar PokémonGo! y saber la cantidad de pokémon que aparecen por hora durante el día. Éste último es la tercera pantalla donde lo vamos a interactuar con un reloj.
 
-1- ¿Qué son los team? (para saber como clasificamos los pokemones)
+En esta imagen se muestra el prototipo de flujo de la página
 
-Son tres grandes equipos, rojo, amarillo y azul, cuando se comienza a jugar hay que elegir un color, sólo una vez se puede cambiar. Los gimnasios están determinados por color y puede cambiar a través de una batalla y queda para el color ganador.
+![imagen 4](img/sketch1.png)
+ **Flujo interactivo de PokéGO!*
+![Flujo de usuario](img/Flujo_de_usuario.png) 
 
-2- ¿Qué aspectos relevantes debemos considerar en nuestra web para principiantes?
+### **1.0 Prototipo alta fidelidad**
+Luego de analizar nuestro prototipo de baja, diseñamos nuestro prototipo de alta en Figma y lo exportamos a Zeplin.
 
-El Pokemón que es más fuerte y más débil, en cuanto combate. PC (poder de combate), clasificar por tipo (fuego, agua, etc.)
-
-3- ¿Juegan sólo para coleccionar Pokemón o para batallar?
-
-Para batallar y para coleccionar.
-
-4- ¿Qué fue lo primero que investigaron para poder combatir o coleccionar?
-
-Aprendieron por la serie y con videojuegos que tenían de antes, buscaron por foro, por amigos y google. 
-
-
-### **Historia de usuario**
-
-Con la información obtenida mendiante las entrevistas e investigación por internet podemos diseñar la historia de usuario:
-
-Historia Nº 1
-
-Como: Jugador principiante de pokemon go.
-
-Quiero: Saber los tipos de pokemon que hay.
-
-Para: Tener una visión más amplia de los pokemon que hay por grupo.
-
-Criterios de aceptación de Historia Nº 1:
-
-Dada: La información de los grupos que hay.
-
-Cuando: El usuario hace click en "Tipos de Pokemon".
-
-Entonces: Apareceran los grupos de Pokemón que hay, en cada uno de ellos el listado de los Pokemón que lo integran.
-
-
-Historia Nº 2
-
-Como: Jugador principiante de Pokemón Go.
-
-Quiero: Saber que Pokemón son más probables de encontrar en una hora determinada.
-
-Para: Ver cuales puedo evolucionar primero.
-
-
-Criterios de aceptación, historia 2
-
-Dada: La opcion que aparece en la pagina web.
-
-Cuando: El jugador hace click en "Hora".
-
-Entonces: Se muestra el listado de Pokemón que aparece en una hora determinada
-
-
-Historia Nº 3
-
-Como: Jugador principiante de Pokemón Go.
-
-Quiero: Conocer todos los Pokemón de la Región de Kanto.
-
-Para: Aprender a jugar y ser un maestro pokemón.
-
-
-Criterios aceptación Nº 3
-
-Dada: A un listado de Pokemón que se despliega en la página, el usuario hace click en una imagen.
-
-Cuando: Se carga la página con ese Pokemón.
-
-Entonces: Aparecerá el listado de características del pokemon.
-
-
-### **Definición de Terminado**
-
-Historia Nº 1
-
-* Abrir el select "Tipos de Pokemon" haciendo click.
-* Se despliega las categoría que hay de Pokemón.
-* El usuario debe seleccionar la categoria que quiere al hacer click.
-* Al hacer click va a aparecer los Pokemón del tipo seleccionado.
-
-Historia Nº 2
-
-* En la parte superior de la página habrá un boton con el nombre de "hora de aparición"
-* Al hacer click en el boton aparece una nueva pagina.
-* En la pagina estará la imagen de un reloj donde el usuario posiciona el cursor sobre una hora determinada y se mostrará el listado de pokemon que aparen en esa hora.
-
-Historia Nº 3
-
-* Al ingresar a la página principal el usuario hará click en GO! para conocer a los pokemones.
-* Aparece el listado de imagenes de todos los pokemones ordenados por numero
-* En la parte superior de la pagina habrá un "select" donde aparece la opción de ordenar el listado de pokemones por alfabeto, que puede ser desde la A/Z o Z/A y por numero.
-* El usuario al hacer click en una imagen tendrá la posibilidad de conocer la ficha técnica/descriptiva del pokemon.
-
-### **Prototipo de baja de nuestra pagina PokeGo!**
-
-Diseñamos protptipo de pagina que consta de tres pantalla, la primera es de bienvenida y con un boton "GO" el usuario podrá interactuar con la información que desea obtener. La segunda pantalla es donde se despliega todos los pokemones donde el usuario puede ordenar los 151 pokemones por orden alfabetico ascendente y descendente y por numero, tambien mostraremos la opcion de que pueda tener más información sobre como ser un maestro pokemon, guia de como jugar PokemonGo! y saber la cantidad de pokemones que aparecen por hora durante el día. Éste último es la tercera pantalla donde lo vamos a interactuar con un reloj.
-
-En esta imagen se muestra el protitpo de flujo de nuestra pagina
-
-![imagen 1](img/sketch1.png) 
-
-Aquí detallamos como se va a interactuar la información en la pantalla dos:
-
-![imagen 2](img/sketch2.png)
-
-En esta última imagen es como tenemos pensado mostrar nuestro calculo de data.
-
-![imagen 3](img/sketch3.png)
-
-### **Prototipo de alta de nuestra pagina Pokego!**
-
-Luego de testar y analizar nuestro prototipo de baja, diseñamos nuestro prototipo de alta en Figma y lo exportamos a Zeplin.
-
-[Ver prototipo en alta en Figma](https://www.figma.com/file/NZ8W3KBrc3oz3UcEUSb8PIuo/PokeGO?node-id=0%3A1)
+[Ver prototipo 1.0 en alta en Figma](https://www.figma.com/proto/NZ8W3KBrc3oz3UcEUSb8PIuo/PokeGO?node-id=0%3A1&scaling=scale-down)
 
 [Exportación del proyecto de Figma a Zeplin](https://zpl.io/29oOzrw)
 
-El prototipo en alta fue testeado y grabado:
+### **1.0 Fundamentos visual design**
+* Selección de imagenes: se les mostró a los usuarios dos opciones de las imagenes de los pokémon, la mayoría elegió las que seguían una linea estilo "cartoon" ya que les recordaba a la serie de pokémon, generando un "vínculo nostalgico".
 
-[Video uno de testeabilidad](https://github.com/AnaGalvezSalas11/scl-2018-12-bc-core-data-lovers/blob/master/src/Videos%2C%20testeo%20de%20pagina%20en%20alta/Diego.mp4)
+* Se colocaron al lado derecho las acciones para que fueram más fáciles de leer.
 
-[Video dos de testeabilidad](https://github.com/AnaGalvezSalas11/scl-2018-12-bc-core-data-lovers/blob/master/src/Videos%2C%20testeo%20de%20pagina%20en%20alta/Nicolas.mp4)
-
-Las observaciones que tuvimos de los usuarios frente a nuestro prototipo de pagina web fue:
-
-* Que en el reloj donde damos a conocer el listado de pokemon, debieramos dar la opción de conocer la ficha descroptiva de cada uno de ellos al hacer click (como en la pantalla 2)
-
-* Que en la ficha descriptiva de cada pokemon indicar de que manera es la evolución por pokemon.
-
-* Les gustó que las debilidades aparezcan en colores (más visual) que solo nombrarlos.
-
- 
-Paleta de colores usada en la interfaz:
-
+* Paleta de colores usada en la interfaz esta basada en el logo clásico:
 ![Paleta de colores](img/paleta.png)
 
 
 
+### **1.0 Testeo de usabilidad**
+[Ver videos](https://drive.google.com/open?id=1nNqfTYAbFsNpYdYQ9CfZk9gEljz8zeqS)
 
-### **Flujo interactivo de PokeGO!**
+### **1.0 Observaciones**
+Las observaciones que tuvimos de los usuarios frente a nuestro prototipo de pagina web fue:
 
-![Flujo de usuario](img/Flujo_de_usuario.png)
+**Que la primera pantalla no la encuentran necesaria, prefieren acceder más rapido a la información.*
+
+**Que en la ficha descriptiva de cada pokemon los llevará a otra página encontraron también que no es necesario.*
+
+**Les gustó que las debilidades aparezcan en colores (más visual) que solo nombrarlos.*
 
 
-### **Planificación en Trello**
+Tomando en cuenta las observaciones, se realizó un segundo prototipo con mejoras.
+### **2.0 Prototipo baja fidelidad**
+En esta imagen se muestra el protitpo de flujo 2.0
+![imagen 5](img/sketch2.0.png) 
+
+### **2.0 Prototipo alta fidelidad**
+
+[Ver prototipo 2.0 en alta ](https://camilanavarreteivanoff.github.io/scl-2018-12-bc-core-data-lovers/#)
+
+### **2.0 Testeo de usabilidad**
+Se realizó el test a un número de personas que llevan poco tiempo jugando pokemon go y personas que recién quieren iniciarse en el juego,
+se les pidió que recorrieran la página libre y realizarán algunas de las siguientes tareas:
+
+1.”Encuentra que tipos de pokemon son tierra”
+
+2.”Encontrar las debilidades de algún pokémon”
+
+3.”Encontrar un pokémon en específico”
+
+[Ver las respuestas](https://docs.google.com/document/d/1SHW6nQKEyKPiukdMgKILSpOb7P9-3Htug1bDkXdBh9I/edit)
+
+[Ver videos del test de usabilidad](https://drive.google.com/open?id=1AtTRhHh0zzLgukWTWWXlyHNvXAnXuuDE)
+
+
+### **2.0 Evaluación Heurística**
+
+[Ver puntuación y punto a corregir](https://drive.google.com/open?id=1KMfPza3shog9NOvFxWa5nGfteY_bgHkx)
+
+
+### **2.0 Observaciones para mejoras**
+**Luego de ordenarlos por tipo, quiso ordenar solo los de tierra por orden alfabético, esa opción no está disponible.*
+
+**Cuando quiso devolverse al inicio, no encontró ningún botón para realizar la acción, no hizo clic sobre el logo el cual devuelve al inicio.*
+
+**Encontró fácilmente las fichas, comentó que le serviría esa información al momento de combatir en el gimnasio.*
+
+**Comenta que le sería más fácil encontrar un pokemon con un buscador,que complete el nombre del pokemon.*
+
+**Comenta que le gustaría ver las evoluciones de los pokemones.*
+
+**Comenta que la información de la región de kanto podría estar más llamativa.*
+
+Puntos críticos
+![imagen 6](img/correccion1.jpg) 
+![imagen 7](img/correccion2.jpg) 
+
+
+Tomando en cuenta las observaciones, se realizó un tercer prototipo con mejoras.
+## **3.0 Prototipo baja fidelidad**
+En esta imagen se muestra el protitpo de flujo 3.0
+
+![imagen 6](img/sketch3.0.png) 
+
+## **3.0 Prototipo alta fidelidad**
+
+[Ver prototipo 3.0 en alta en Figma](https://www.figma.com/proto/SX7K5ML2kkX3uOv5ygX7MD3s/PokeGo-3.0?node-id=13%3A168&scaling=min-zoom)
+
+### **Actualización**
+Siguiendo con los testeos, la página web tendra una actualización pronto.
+
+### **Planificación**
 
 [Trello PokeGO!](https://trello.com/b/J9VDuFEc/pokemon-go)
 
-
-
-
-
-
-
-
+[Trello data-lovers UX!](https://trello.com/b/gabUfphD/data-lovers-ux)
